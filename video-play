@@ -1,0 +1,18 @@
+ initVideo: function() {
+        $('.video-player-wrapper').each(function () {
+            var wrapper = $(this);
+            var iframe = wrapper.find('iframe');
+            var cover = wrapper.find('.video-player-cover');
+            
+            cover.on('click', function (e) {
+                e.preventDefault();
+                
+                cover.fadeOut(600);
+                iframe.get(0).contentWindow.postMessage(JSON.stringify({
+                    event: 'command',
+                    func: 'playVideo',
+                    args: []
+                }), '*');
+            });
+        });
+    }
