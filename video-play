@@ -16,3 +16,24 @@
             });
         });
     }
+<div class="video-box video-player-wrapper ">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="video-player embed-responsive-item" width="100%" height="100%" src="https://www.youtube.com/embed/Ys_hUIPta3U?enablejsapi=1&amp;rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+          <div class="video-player-cover">
+            <div class="arrow hidden-xs hidden-sm"></div>
+          </div>
+        </div>
+        
+        
+        .video-player-wrapper .video-player-cover {
+    background: url(../images/video_cover.png) no-repeat left top;
+    background-size: cover;
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    box-shadow: }
